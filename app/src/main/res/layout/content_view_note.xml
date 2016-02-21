@@ -25,8 +25,7 @@
             android:id="@+id/titleTextView"
             android:layout_column="0"
             android:textColor="#f9a931"
-            android:textStyle="bold"
-            android:width="30dp" />
+            android:textStyle="bold" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -50,8 +49,7 @@
             android:id="@+id/noteTextView"
             android:layout_column="0"
             android:textColor="#f9a931"
-            android:textStyle="bold"
-            android:width="2dp" />
+            android:textStyle="bold" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -82,36 +80,18 @@
             android:id="@+id/dateEditText"
             android:layout_column="1"
             android:editable="false"
-            android:textColor="#f9a931" />
+            android:textColor="#ffffff" />
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="300dp"
-            android:id="@+id/imageView3"
-            android:layout_column="0"
-            android:src="@mipmap/ic_paz"
-            android:layout_marginLeft="30dp" />
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Your note is ready!"
-            android:id="@+id/readyTextView"
-            android:layout_column="0"
-            android:textColor="#f9a931"
-            android:textSize="35dp"
-            android:textStyle="bold"
-            android:layout_marginLeft="30dp" />
     </TableRow>
 </TableLayout>
