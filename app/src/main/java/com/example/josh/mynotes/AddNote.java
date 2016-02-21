@@ -41,7 +41,7 @@ public class AddNote extends AppCompatActivity{
         noteEditText = (EditText) findViewById(R.id.noteEditText);
 
 
-        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
         calendar = Calendar.getInstance();
 
         date = (dateFormat.format(calendar.getTime()));

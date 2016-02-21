@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Josh\\AndroidStudioProjects\\JoshMyNotes\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Josh\\AndroidStudioProjects\\JoshMyNotes\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Josh\\AndroidStudioProjects\\JoshMyNotes\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_paz.png",
+        "source": "C:\\Users\\Josh\\AndroidStudioProjects\\JoshMyNotes\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_paz.png"
+    },
+    {
+        "merged": "C:\\Users\\Josh\\AndroidStudioProjects\\JoshMyNotes\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_fox.png",
+        "source": "C:\\Users\\Josh\\AndroidStudioProjects\\JoshMyNotes\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_fox.png"
+    }
+]

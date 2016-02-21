@@ -12,7 +12,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DBHandler extends SQLiteOpenHelper {
 
 
-    private static final int DATABASE_VERSION = 6;
+    private static final int DATABASE_VERSION = 7;
     private static final String DATABASE_NAME = "assign1notes.db";
     public static final String TABLE_NOTES = "notes";
     public static final String COLUMN_LIST_ID = "_id";
@@ -89,5 +89,46 @@ public class DBHandler extends SQLiteOpenHelper {
         db.close();
         return dbString;
     }
+
+    public UserNoteActual getUserNoteActual(Integer noteID){
+        UserNoteActual userNoteActual = null;
+
+        SQLiteDatabase db = getWritableDatabase();
+
+        String query = "SELECT * FROM " + TABLE_NOTES + " WHERE " + COLUMN_LIST_ID + " = " + noteID;
+
+        Cursor cursor = db.rawQuery(query, null);
+
+        int numNotes= cursor.getCount();
+
+        if(numNotes >=1){
+            cursor.moveToFirst();
+
+            userNoteActual = new UserNoteActual(
+                    (cursor.getInt(cursor.getColumnIndex("_id"))),
+                    (cursor.getString(cursor.getColumnIndex("list_title"))),
+                    (cursor.getString(cursor.getColumnIndex("list_note"))),
+                    (cursor.getString(cursor.getColumnIndex("list_date")))
+            );
+        }
+        db.close();
+
+        return userNoteActual;
+    }
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
 

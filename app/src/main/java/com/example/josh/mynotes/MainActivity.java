@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -44,7 +45,18 @@ public class MainActivity extends AppCompatActivity {
         //printing the return of the dbHandler method getNumberOfNotes().
         toolbar.setSubtitle("Notes: " + dbHandler.getNumberOfNotes());
 
+        notesListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                intent = new Intent(MainActivity.this, ViewNote.class);
+                intent.putExtra("_id", id);
+                startActivity(intent);
+            }
+        });
+
     }
+
+
 
     //This begins the create note activity
     public void openCreateNote(View view){

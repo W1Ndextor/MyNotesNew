@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Josh\\AndroidStudioProjects\\JoshMyNotes\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_add_note.xml",
+        "source": "C:\\Users\\Josh\\AndroidStudioProjects\\JoshMyNotes\\app\\src\\main\\res\\menu\\menu_add_note.xml"
+    },
+    {
+        "merged": "C:\\Users\\Josh\\AndroidStudioProjects\\JoshMyNotes\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_view_note.xml",
+        "source": "C:\\Users\\Josh\\AndroidStudioProjects\\JoshMyNotes\\app\\src\\main\\res\\menu\\menu_view_note.xml"
+    },
+    {
+        "merged": "C:\\Users\\Josh\\AndroidStudioProjects\\JoshMyNotes\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "C:\\Users\\Josh\\AndroidStudioProjects\\JoshMyNotes\\app\\src\\main\\res\\menu\\menu_main.xml"
+    }
+]
