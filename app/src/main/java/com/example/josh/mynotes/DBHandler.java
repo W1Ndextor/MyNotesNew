@@ -116,6 +116,19 @@ public class DBHandler extends SQLiteOpenHelper {
         return userNoteActual;
     }
 
+    public void deleteNote(Integer itemId){
+
+        SQLiteDatabase db = getWritableDatabase();
+
+        String query = "DELETE FROM " + TABLE_NOTES + " WHERE " + COLUMN_LIST_ID + " = " + itemId;
+
+        db.execSQL(query);
+
+        db.close();
+
+    }
+
+
 
 
 

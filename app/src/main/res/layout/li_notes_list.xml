@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#000000">
 
     <TableRow
         android:layout_width="match_parent"
@@ -26,7 +27,8 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Medium Text"
-                android:id="@+id/titleTextView" />
+                android:id="@+id/titleTextView"
+                android:textColor="#ffffff" />
 
 
             <TextView
@@ -34,7 +36,8 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Medium Tex"
-                android:id="@+id/dateTextView" />
+                android:id="@+id/dateTextView"
+                android:textColor="#ffffff" />
 
         </LinearLayout>
     </TableRow>

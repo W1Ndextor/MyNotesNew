@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class ViewNote extends AppCompatActivity {
 
@@ -48,10 +49,15 @@ public class ViewNote extends AppCompatActivity {
 
     }
 
+    //public void deleteNote(MenuItem menuItem){
+
+    //}
     public void deleteNote(MenuItem menuItem){
 
-    }
+        dbHandler.deleteNote((int) id);
 
+        Toast.makeText(this, "Note Deleted!", Toast.LENGTH_LONG).show();
+    }
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.menu_view_note, menu);
         return true;
